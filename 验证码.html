@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>验证码</title>
+    <style>
+        .code_show{
+            padding:10px 0;
+        }
+        #checkCode{
+            font-size: 35px;
+            background-color: #bfa;
+            font-style: italic;
+        }
+        #button1{
+            margin-left: 80px;
+            margin-top: 10px;
+            padding: 5px;
+            font-size: 15px;
+            background-color: yellow;
+            cursor: pointer;
+        }
+    </style>
+    <script src="verficationCode.js"></script>
+</head>
+<body>
+<div class="v_code">
+    <div class="code_show">
+        <span id="checkCode"></span>
+        <a href="" id="linkBt">换一张</a>
+    </div>
+    <div class="input_code">
+        <label for="inputCode">验证码：</label>
+        <input type="text" id="inputCode">
+        <span id="text_show"></span>
+    </div>
+    <input type="button" id="button1" value="提交"/>
+</div>
+</body>
+</html>
